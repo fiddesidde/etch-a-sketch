@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: #d9e7e6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    margin-left: 20px;
+    color: #1b364b;
+}
+
+/* Second Button */
+.button {
+    display: inline-flex;
+    height: 20px;
+    width: 95px;
+    /* border: 2px solid #1b364b; */
+    margin: 0px 0px 40px 20px;
+    padding-left: 4px;
+    color: #1b364b;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    align-items: center;
+    /* justify-content: center; */
+    overflow: hidden;
+}
+
+a {
+    color: #1b364b;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#button-2 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button-2 a {
+    position: relative;
+    transition: all 0.35s ease-Out;
+}
+
+#slide {
+    width: 100%;
+    height: 5%;
+    left: -200px;
+    background: rgba(94, 116, 143, 1);
+    position: absolute;
+    transition: all 0.35s ease-Out;
+    bottom: 0;
+}
+
+#button-2:hover #slide {
+    left: 0;
+}
+
+#button-2:hover a {
+    color: #2d3142;
+}
+
+#container {
+    width: 960px;
+    height: 960px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgb(94, 116, 143);
+    background: linear-gradient(
+        0deg,
+        rgba(94, 116, 143, 1) 0%,
+        rgba(13, 26, 36, 1) 100%
+    );
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 8px 1px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+.box {
+    background-color: white;
+    flex: 1;
+}
+
+.box:hover {
+    background: rgb(94, 116, 143);
+    background: linear-gradient(
+        0deg,
+        rgba(94, 116, 143, 1) 0%,
+        rgba(13, 26, 36, 1) 100%
+    );
+}
+
+.box-painted {
+    opacity: 0;
+}
+
+@media (max-width: 1010px) {
+    #container {
+        width: 600px;
+        height: 600px;
+    }
+}
+@media (max-width: 620px) {
+    #container {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    #container {
+        width: 300px;
+        height: 300px;
+    }
+}
